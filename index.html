@@ -4,106 +4,58 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Vizora Tools — Excel & Power BI templates</title>
-<meta name="description" content="Excel & Power BI templates for smarter procurement & operations. Instant downloads." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='128' fill='%2322b8b1'/%3E%3Cpath d='M182 78a18 18 0 0 0-25 4l-11 16-92 18a18 18 0 1 0 6 35l61-12-31 45a18 18 0 0 0 30 21l67-97a18 18 0 0 0-5-25Z' fill='%23fff'/%3E%3C/svg%3E">
+<meta name="description" content="Excel & Power BI templates for smarter procurement & operations. Instant downloads.">
 <style>
-  :root{
-    --bg:#0b2e2e; --card:#114446; --pill:#0f3b3d; --text:#f4fbfb; --text-2:#d6efef;
-    --white:#fff; --shadow:0 16px 40px rgba(0,0,0,.25);
-    --radius:22px;
-  }
-  *{box-sizing:border-box}
-  html,body{height:100%}
-  body{
-    margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
-    color:var(--text); background:radial-gradient(90% 120% at 10% 10%,#0e4245,#072122 60%);
-    display:grid; place-items:center; padding:26px;
-  }
-  .card{
-    width:min(1060px,100%); background:linear-gradient(180deg,var(--card),#0e3a3c);
-    border-radius:28px; box-shadow:var(--shadow); padding:28px 28px 24px;
-  }
-  header{display:flex; gap:18px; align-items:center; margin-bottom:12px}
-  .brand{
-    width:42px; height:42px; display:grid; place-items:center;
-    background:linear-gradient(160deg,#197a80,#1fb2a9); border-radius:12px;
-    box-shadow:inset 0 0 0 1px rgba(255,255,255,.15);
-  }
-  .brand svg{width:26px; height:26px}
-  h1{font-size:40px; line-height:1.1; margin:0}
-  .tagline{color:var(--text-2); margin:6px 0 18px; font-size:18px}
-
-  /* CTA row */
-  .row{display:grid; grid-template-columns:1fr 1fr; gap:18px}
-  .cta{
-    display:inline-flex; align-items:center; justify-content:center; gap:10px;
-    padding:16px 22px; background:var(--white); color:#0b2e2e; text-decoration:none;
-    border-radius:16px; font-weight:700; box-shadow:0 10px 28px rgba(0,0,0,.22);
-    transition:transform .06s ease, filter .15s ease;
-    min-height:56px;
-  }
-  .cta:hover{transform:translateY(-1px); filter:brightness(.97)}
-  .cta:active{transform:translateY(0)}
-
-  /* Pills line */
-  .pills{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
-  .pill{
-    background:var(--pill); color:var(--text-2); padding:12px 16px; border-radius:999px;
-    font-weight:600; box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);
-  }
-
-  /* Gumroad icon (inline) */
-  .g-logo{width:18px; height:18px; display:block}
-  .footer{display:flex; gap:14px; align-items:center; justify-content:space-between; margin-top:16px; color:#cde7e7; font-size:13px}
-  .footer a{color:#bfe9e9; text-decoration:none}
-  .footer a:hover{text-decoration:underline}
-
-  /* mobile */
-  @media (max-width:760px){
-    h1{font-size:30px}
-    .row{grid-template-columns:1fr}
-  }
+  :root{--bg:#082e2e;--card:#0f4042;--pill:#10383a;--white:#fff;--text:#eaf6f6;--muted:#cfe7e7}
+  *{box-sizing:border-box} html,body{height:100%}
+  body{margin:0;background:radial-gradient(110% 130% at 10% 10%,#0d4648,#052022 60%);display:grid;place-items:center;padding:26px;color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif}
+  .card{width:min(1060px,100%);background:linear-gradient(180deg,var(--card),#0d3a3c);border-radius:28px;box-shadow:0 18px 46px rgba(0,0,0,.28);padding:28px 28px 22px}
+  header{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+  .brand{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(160deg,#197a80,#1fb2a9)}
+  .brand svg{width:24px;height:24px}
+  h1{margin:0;font-size:36px}
+  .tag{margin:6px 0 16px;color:var(--muted);font-size:18px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cta{display:flex;align-items:center;justify-content:center;gap:10px;
+       min-height:54px;padding:14px 20px;border-radius:16px;background:var(--white);
+       color:#0b2e2e;text-decoration:none;font-weight:700;box-shadow:0 10px 28px rgba(0,0,0,.22)}
+  .cta:hover{filter:brightness(.97)}
+  .pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+  .pill{background:var(--pill);padding:12px 16px;border-radius:999px;color:var(--muted);font-weight:600}
+  .pill a{color:inherit;text-decoration:none}
+  .foot{display:flex;justify-content:space-between;margin-top:14px;color:#cfe7e7;font-size:13px}
+  .foot a{color:#bfe9e9;text-decoration:none} .foot a:hover{text-decoration:underline}
+  @media (max-width:760px){h1{font-size:28px}.row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-  <main class="card">
-    <header>
-      <!-- simple hex check mark as brand block -->
-      <div class="brand" aria-hidden="true">
-        <svg viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M128 16 28 74v108l100 58 100-58V74L128 16Z" fill="#0d6970"/>
-          <path d="M186 77a18 18 0 0 0-25 5l-12 17-92 18a18 18 0 1 0 7 35l61-12-32 46a18 18 0 0 0 30 21l68-98a18 18 0 0 0-5-25Z" fill="#fff"/>
-        </svg>
-      </div>
-      <div>
-        <h1>Vizora Tools</h1>
-        <div class="tagline">Excel &amp; Power BI templates for smarter procurement &amp; operations. Instant downloads.</div>
-      </div>
-    </header>
-
-    <div class="row">
-      <a class="cta etsy" href="https://www.etsy.com/shop/VizoraTools" target="_blank" rel="noopener">Buy on Etsy</a>
-
-      <a class="cta gumroad" href="https://vizoratools.gumroad.com/" target="_blank" rel="noopener">
-        <!-- Gumroad “G” style icon (neutralized) -->
-        <svg class="g-logo" viewBox="0 0 24 24" aria-hidden="true">
-          <rect x="1.5" y="3" width="21" height="18" rx="5" fill="#00d0b8"/>
-          <path d="M8.5 9.25a3.25 3.25 0 1 1 0 6.5h-1a1.75 1.75 0 0 1 0-3.5h8a1 1 0 1 0 0-2h-7a3.25 3.25 0 0 1 0-1Z" fill="#0b2e2e"/>
-        </svg>
-        Direct download on Gumroad
-      </a>
+<main class="card">
+  <header>
+    <div class="brand" aria-hidden="true">
+      <!-- Vizora tick icon -->
+      <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M128 16 28 74v108l100 58 100-58V74L128 16Z" fill="#0d6970"/><path d="M186 77a18 18 0 0 0-25 5l-12 17-92 18a18 18 0 1 0 7 35l61-12-32 46a18 18 0 0 0 30 21l68-98a18 18 0 0 0-5-25Z" fill="#fff"/></svg>
     </div>
-
-    <div class="pills">
-      <div class="pill">Instant digital download</div>
-      <div class="pill">Macros included • Clean inputs</div>
-      <div class="pill"><a href="mailto:support@vizoratools.com" style="color:inherit;text-decoration:none;">Support: support@vizoratools.com</a></div>
+    <div>
+      <h1>Vizora Tools</h1>
+      <div class="tag">Excel &amp; Power BI templates for smarter procurement &amp; operations. Instant downloads.</div>
     </div>
+  </header>
 
-    <div class="footer">
-      <span>© 2025 Vizora Tools</span>
-      <a href="https://linktr.ee/vizoratools" target="_blank" rel="noopener">All links</a>
-    </div>
-  </main>
+  <div class="row">
+    <a class="cta" href="https://www.etsy.com/shop/VizoraTools" target="_blank" rel="noopener">Buy on Etsy</a>
+    <a class="cta" href="https://vizoratools.gumroad.com/" target="_blank" rel="noopener">Direct download on Gumroad</a>
+  </div>
+
+  <div class="pills">
+    <div class="pill">Instant digital download</div>
+    <div class="pill">Macros included • Clean inputs</div>
+    <div class="pill"><a href="mailto:support@vizoratools.com">Support: support@vizoratools.com</a></div>
+  </div>
+
+  <div class="foot">
+    <span>© 2025 Vizora Tools</span>
+    <a href="https://linktr.ee/vizoratools" target="_blank" rel="noopener">All links</a>
+  </div>
+</main>
 </body>
 </html>
